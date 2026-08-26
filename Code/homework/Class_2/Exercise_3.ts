@@ -1,0 +1,12 @@
+const firstName = "James";
+const lastName  = "Bond";
+const dateofBirth = "2012-12-12";
+const placeofBirth = "London";
+const genderatBirth = "Male";
+let maritalStatus: string;
+maritalStatus = "Single";
+let nationality: string;
+nationality  = "British";
+let occupation: string;
+occupation = "Intelligence Officer";
+console .log(firstName + " " + lastName + " " + dateofBirth + " " + placeofBirth + " " + genderatBirth + " " + maritalStatus + " " + nationality + " " + occupation);   

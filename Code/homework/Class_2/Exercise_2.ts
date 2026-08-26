@@ -1,0 +1,10 @@
+let a;
+console.log(typeof a);
+let c = 9;
+console.log(typeof c);
+let str = "Hi5!";
+console.log(typeof str);
+let b = true;
+console.log(typeof b);
+let y = 9 + "1";
+console.log(typeof y);

@@ -1,0 +1,15 @@
+let a = 7;
+let b = 17;
+let c = a + b;
+let d = a - b;
+let e = b - a; 
+let aResult = 10 < a && a < 20;
+console.log(a + " " + aResult);
+let bResult = 10 < b && b < 20;
+console.log(b + " " + bResult);
+let cResult = 10 < c && c < 20;
+console.log(c + " " + cResult);
+let dResult = 10 < d && d < 20;
+console.log(d + " " + dResult);
+let eResult = 10 < e && e < 20;
+console.log(e + " " + eResult);
