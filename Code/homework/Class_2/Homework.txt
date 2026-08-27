@@ -1,0 +1,85 @@
+Материал к прочтению:
+
+https://www.w3schools.com/js/js_variables.asp  
+https://www.w3schools.com/js/js_operators.asp  
+https://www.learn-ts.org/en/Variables_and_Types  
+https://www.learn-ts.org/en/Operators  
+
+https://learn.javascript.ru/variables  
+https://learn.javascript.ru/operators 
+
+
+Задачки:
+
+Переменные
+Объявите две переменные: firstName и lastName.
+Присвойте значение “John”  переменной firstName и значение “Adams”   переменной  lastName.
+Выведите в консоль  значение firstName и lastName (должно показать John Adams).
+Измените firstName и lastName на новое значение: "Brandon Smith".
+
+В итоге на экране должно быть две строки:
+John Adams
+Brandon Smith
+
+
+
+Выведите в консоль тип данных следующих переменных (использовать метод typeof())
+
+let a;
+let c = 9;
+let str = “Hi 5!”;
+let b = true;
+let y = 9 + “1”;
+
+Возьмем персонаж James Bond. Придумайте, какие его характеристики логично объявить через const, а какие через let. Пропишите их и выведите на экран
+
+
+Создайте несколько переменных с разными числами. Проверьте находятся ли числа между 10 и 20. Выведете на печать для каждой цифры true или false
+
+
+Что выведет код и почему: 
+const num: number = 15;
+const result = num + 5;
+console.log(result);
+
+const num2: string = "28";
+const result = num2 + 2;
+console.log(result);
+
+console.log( null || 2 || undefined );
+
+const x: number = 5;
+const y: number = 10;
+
+console.log(x > 0 && y < 20); 
+console.log(x < 0 && y > 0); 
+console.log(x < 0 && y < 0); 
+console.log(x > 0 && "Hello");
+
+const a: number = 0;
+const b: number = 5;
+
+console.log(a > 0 || b > 0); 
+console.log(a > 0 || b === 0); 
+console.log(a > 0 || ""); 
+console.log(a < 0 || "Hello");
+
+let x: number = 5;
+let y: number = 10;
+let z: number = 15;
+let result = (x > y || y < z) && !(z === x);
+
+Какого типа данных будет результат выполнения оператора "typeof" для переменной "isAdult", если возраст "age" равен 18?
+let age: number = 18;
+let isAdult = age >= 18;
+let typeOfIsAdult = typeof isAdult;
+console.log(typeOfIsAdult);
+
+Задачки на CodeWars:
+!!! Примечание:
+В CodeWars, некоторые задачи можно писать только в JavaScript, а не в TypeScript.
+Всегда пытайтесь выбрать TypeScript, но если это не возможно, решайте в JavaScript, но пишите чистый код, как бы писали в TypeScript (например, переменная создается только с одним типом данных, не переписывайте переменную с другим типом данных, и т.д.)
+
+http://www.codewars.com/kata/560f8d41cf6e1fe5c900002e 
+http://www.codewars.com/kata/50ee6b0bdeab583673000025 
+
