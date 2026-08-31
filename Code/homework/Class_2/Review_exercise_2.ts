@@ -31,9 +31,13 @@ let isPresent: boolean = true ;
 let firstName: string = "Frodo" ;
 let lastName: string = "Baggins" ;
 
+
 // 1.Каково значение выражения: num + str?
 console.log(typeof(num + str));
+console.log(typeof(num + str));
 console.log("1." + num + str);
+// answer string = num + str ;
+// amswer string = str + num ; if we aew adding several var, and one of them is sring, the result will be string 
 // 2.Каково значение переменной num + str2?
 console.log(typeof(num + str2));
 console.log("2." + num + str2);
@@ -41,14 +45,17 @@ console.log("2." + num + str2);
 console.log(typeof(str2 + num));
 console.log("3." + str2 + num);
 // 4.Каково значение выражения: num + isPresent?
+// True  = 1; False = 0 ;
 //console.log("4." + typeof(num + isPresent));
 //console.log(num + isPresent);
 // 5.Каково значение выражения: firstName + num?
 console.log("5." + typeof(firstName + num));
 console.log(firstName + num);
 // 6.Каково значение переменной `isPresent + str`?
-console.log("6." + typeof(isPresent + str));
-console.log(isPresent + str);
+console.log("6." + typeof('isPresent + str'));
+console.log('isPresent + str');
+console.log(isPresent + str) ;
+console.log(typeof(isPresent + str));
 // 7.Каково значение выражения: firstName + lastName?
 console.log("7." + typeof(firstName + lastName));
 console.log(firstName + lastName);
