@@ -1,1 +1,3 @@
 node_modules/
+# Course videos are stored locally only
+*.mp4
