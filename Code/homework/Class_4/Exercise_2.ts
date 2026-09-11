@@ -8,7 +8,7 @@ const b:number = 5;
 let result: number | string;
 
 if (operator === "+") {
-    result = a-b;    
+    result = a + b;
 }
 else if (operator=== "-"){
     result = a-b;
