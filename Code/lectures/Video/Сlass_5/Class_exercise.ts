@@ -7,7 +7,7 @@
 //return  - результат
 // }
 
-function Greeting(): string 
+function Greeting(): string // function declaration 
 {return "Hello World returned";
 
 }
@@ -43,13 +43,13 @@ function Print1(): void{
 //}
 //console.log(typeof throwError());
  
-function Sum(): number {
+function Sum9(): number {
  const a: number = 5;
  const b: number  =  10;
 return a + b
 
 }
-console.log (Sum());
+console.log (Sum9());
 
 function Sum1 (a: number, b: number): number {
     return a + b;
@@ -57,18 +57,15 @@ function Sum1 (a: number, b: number): number {
 console.log(Sum1(5,10));
 console.log(Sum1(1,2));
 
-// Опциональный, или необязательный аргумент
-function Sum2: number, b?: number): number {
-    if (b) {
-        return a + b;
+    // необязательный аргумент
+    function Sum(a:number, b: number = 10):number{
+        if (b) {
+            return a+b;
+        }
+        return a;
     }
-    return a + 10;
-}
-console.log(Sum2(5));
+    console.log(Sum(5));
 
-//  мы можем создать переменную,значение которой будет результат, возвращаемый функцией
-let sum3 :number   = Sum (1,2);
-console.log(sum3);
 
 function Outer():string {
     function Inner(): number {
@@ -77,3 +74,57 @@ function Outer():string {
     return "hello-" + Inner();
 }
 console.log (Outer());
+
+//ф имеет доступ к внешним параметрамя
+
+ const c: number = 100;
+ function Sum10(a:number, b:number): number {
+return a + b + c;
+ }
+ console.log(Sum10(1,3));
+
+ const sum: number = Sum10(1,2);// function expression, переменной присваивается значение резульатата . наверх не поднимается
+ console.log(sum);
+
+ // рекурсивная функция -функция, которая вызывает сама себя
+ function SquareIt(num:number) : number | undefined {
+    if (num > 65536)
+    {return// выйди из моей функции
+
+    }
+    console.log(num);
+    const square = num * num;
+    return SquareIt(square);
+ }
+ SquareIt(2);
+
+ // function hoisting   - подъем функции наверъ кода 
+
+ // =  сначала создаем фунццию, а потом ее вызываем
+
+// анонимная функция  - когда не обращаемя к функции напряму.
+const sum12 = function (a: number, B: number) : number {
+    return a + b;
+
+};
+console .log(sum12(1,2));
+  
+ 
+// arrow function =  стрелочная функиця // => заменяет "function" 
+const sum13 =  (a: number, B: number) : number  => {
+    return a + b;
+
+};
+console .log(sum12(1,2));
+
+ // arrow function позволяют компактно выполнять функции, где вернуть нужно одну строку
+ const sum14 = (a: number, b: number):number => a + b;
+console.log(sum14(1,2));
+
+const myf = (): string => ""
+ {
+    // arrow function};
+    return "";
+
+ };
+ 
