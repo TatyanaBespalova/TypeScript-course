@@ -121,10 +121,32 @@ console .log(sum12(1,2));
  const sum14 = (a: number, b: number):number => a + b;
 console.log(sum14(1,2));
 
-const myf = (): string => ""
+const myf1 = (): string => 
  {
-    // arrow function};
-    return "";
+    // arrow function 
+    return ""
 
  };
- 
+// метод  =  функция, которая чему-то принадлежит.
+// map - прокручивает весь массив и создает новый измененный массив
+
+const arr1 :number[] = [1,2,3,4,5];
+const newArr: number[] = [];
+for (let z: number = 0; z < arr1.length; z++) {
+    newArr.push(arr1[z] * 2 );
+
+}
+console.log(newArr);
+
+const arr11 :number[] = [1,2,3,4,5];
+
+function Multiply(el : number) {
+    return el * 2;
+}
+arr1.map(Multiply);// map принимает как параметр функцию multiply, 
+// которая вызываетсястолько раз, сколько есть элементов в массива 
+
+// используем стрелочную функцию
+
+const newArr1: number [] = arr1.map((el:number) =>el*2);
+

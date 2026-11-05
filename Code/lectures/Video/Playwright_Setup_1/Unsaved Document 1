@@ -1,0 +1,12 @@
+CSS selectors:
+ - by id
+    - #id
+ - by class
+    -.className
+    -.className1.className2
+ - by tag attributes
+    - div[name="someName"]
+    - 
+      - "*=" - везде ( everywhere)
+      - "^=" - begins with (начинается с )
+      - "$=" - ends on (заканчиватся на )
