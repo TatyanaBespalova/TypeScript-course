@@ -3,10 +3,10 @@ CSS selectors:
     - #id
  - by class
     -.className
-    -.className1.className2
+    -.className1.className2 (no spaces)
  - by tag attributes
     - div[name="someName"]
     - 
       - "*=" - везде ( everywhere)
       - "^=" - begins with (начинается с )
-      - "$=" - ends on (заканчиватся на )
+      - "$=" - ends on (заканчиватся на ) 
